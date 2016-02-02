@@ -4,7 +4,7 @@
             .html5Mode({
                 enabled: true,
                 requireBase: false
-            });
+            })
         
         $stateProvider
             .state('landing', {
@@ -19,7 +19,7 @@
         .state('collection', {
                 url: '/collection',
                 templateUrl: '/templates/collection.html'
-        });
+        })
     }
 // Assigngment 3 finish----------
     
