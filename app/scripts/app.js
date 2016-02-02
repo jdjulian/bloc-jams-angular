@@ -4,7 +4,7 @@
             .html5Mode({
                 enabled: true,
                 requireBase: false
-            })
+            });
         
         $stateProvider
             .state('landing', {
@@ -14,12 +14,16 @@
             .state('album', {
                 url: '/album',
                 templateUrl: '/templates/album.html'
-        })
+            })
 // Assigngment 3 start----------
-        .state('collection', {
+            .state('collection', {
                 url: '/collection',
                 templateUrl: '/templates/collection.html'
-        })
+            })
+            .state('player_bar', {
+                url: '/player_bar',
+                templateUrl: '/templates/player_bar.html'
+        });
     }
 // Assigngment 3 finish----------
     
