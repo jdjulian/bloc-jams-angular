@@ -40,15 +40,11 @@
      -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
      transition-delay: 0.2s;
-     */
-     /* assignment 22 transition start ==
      
      transition-property: background-color, color; 
      transition-duration: 2s;
-     transition-timing-function: ease-in;
-     background-color: skyblue;
-     
-     == end assignment 22 transition */
+     transition-timing-function: ease-in;*/
+     background-color: skyblue; 
  }
  
  .point .point-title {
