@@ -9,6 +9,7 @@
         $stateProvider
             .state('landing', {
                 url: '/',
+                controller: 'LandingCtrl as landing'
                 templateUrl: '/templates/landing.html'
             })
             .state('album', {
@@ -18,6 +19,7 @@
 // Assigngment 3 start----------
             .state('collection', {
                 url: '/collection',
+                controller: 'CollectionCtrl as collection',
                 templateUrl: '/templates/collection.html'
             })
             .state('player_bar', {
