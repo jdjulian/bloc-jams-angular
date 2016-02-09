@@ -2,7 +2,7 @@
 
 (function() {
     function AlbumCtrl() {
-        this.albumData = angular.copy(albumPicasso);
+        this.albumData = this.albumData.push(angular.copy(albumPicasso));
         }
     }
     
@@ -10,3 +10,11 @@
         .module('blocJams')
         .controller('AlbumCtrl', AlbumCtrl);
 })();
+
+
+
+   
+            
+    
+       
+        
