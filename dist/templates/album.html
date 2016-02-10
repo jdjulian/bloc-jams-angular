@@ -5,9 +5,9 @@
              <img src="/assets/images/album_covers/01.png" class="album-cover-art">
          </div>
          <div class="album-view-details column half">
-             <h2 class="album-view-title">{{ albumPicasso.name }}</h2>
-             <h3 class="album-view-artist">{{ albumPicasso.artist}}</h3>
-             <h5 class="album-view-release-info">{{ albumPicasso.year }}</h5>
+             <h2 class="album-view-title">{{ album.name }}</h2>
+             <h3 class="album-view-artist">{{ album.artist}}</h3>
+             <h5 class="album-view-release-info">{{ album.year }}</h5>
              <!--Angular assignment 5 end-->
          </div>
      </section>
@@ -16,12 +16,12 @@
          <tr class="album-view-song-item" ng-mouseover="hovered = true" ng-mouseleave="hovered = false" ng-repeat="song in albumPicasso.songs"> 
              
             <td class="song-item-number">
-                <span ng-show="!playing && !hovered"> {{ $index + 1 }} </span>
+                <span ng-show="!playing && !hovered"></span>
                 <a class="album-song-button" ng-show="!playing && hovered"><span class="ion-play"></span></a>
                 <a class="album-song-button" ng-show="playing"><span class="ion-pause"></span></a>
             </td>
-            <td class="song-item-title">{{ albumPicasso.songs[$index].name }}</td>
-            <td class="song-item-duration">{{ albumPicasso.songs[$index].length }}</td>
+            <td class="song-item-title">{{ album.songs.name }}</td>
+            <td class="song-item-duration">{{ album.songs.length }}</td>
              <!--Angular assignment 5 end -->
          </tr>
      </table>
